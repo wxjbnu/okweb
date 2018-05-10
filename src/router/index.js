@@ -5,6 +5,7 @@ import Router from 'vue-router'
 
 import Login from '@/views/login'
 import Main from '@/views/main'
+import chart from '@/views/chart'
 
 Vue.use(Router)
 
@@ -25,6 +26,11 @@ export default new Router({
         //   component:  Crowdfunding
         // },
       ]
-    }
+    },
+    {
+      path: '/chart',
+      name: 'chart',
+      component: chart
+    },
   ]
 })
